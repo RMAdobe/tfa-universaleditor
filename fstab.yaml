@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p153123-e1585310.adobeaemcloud.com/bin/franklin.delivery/rmadobe/tfa-ue/main"
+    url: "https://author-p153123-e1585310.adobeaemcloud.com/bin/franklin.delivery/RMAdobe/tfa-ue/main"
     type: "markup"
     suffix: ".html"
