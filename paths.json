@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/tfa-ue/:/",
-    "/content/tfa-ue/configuration:/.helix/config.json",
+    "/content/tfa-universaleditor/:/",
+    "/content/tfa-universaleditor/configuration:/.helix/config.json",
   ]
 }
