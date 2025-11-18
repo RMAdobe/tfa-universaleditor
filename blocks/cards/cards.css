@@ -3,17 +3,19 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
+  display: flex;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  margin-top: -20px;
+  font-size: 14px;
 }
 
 .cards .cards-card-image {
@@ -21,7 +23,23 @@
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  max-width: 100px;
   object-fit: cover;
+}
+
+.section.highlight .cards.block > ul > li {
+  background-color: #091f2c;
+  color: #03a64a;
+  text-align: center;
+  border: 1px solid;
+}
+
+.section.highlight .cards.block > ul > li p {
+  color: #FFF;
+  font-size: 18px;
+}
+
+.section.highlight .cards.block > ul > li p {
+  color: #FFF;
+  font-size: 18px;
 }

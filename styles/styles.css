@@ -15,16 +15,16 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #091f2c;
   --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-hover-color: #a71ad9;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: DM Sans, roboto-condensed-fallback;
+  --heading-font-family: "Lora", serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
+  --body-font-size-m: 20px;
   --body-font-size-s: 19px;
   --body-font-size-xs: 17px;
 
@@ -56,7 +56,7 @@
 @media (width >= 900px) {
   :root {
     /* body sizes */
-    --body-font-size-m: 18px;
+    --body-font-size-m: 20px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 14px;
 
@@ -65,7 +65,7 @@
     --heading-font-size-xl: 36px;
     --heading-font-size-l: 28px;
     --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
+    --heading-font-size-s: 80px;
     --heading-font-size-xs: 18px;
   }
 }
@@ -88,6 +88,10 @@ header {
   height: var(--nav-height);
 }
 
+strong {
+  font-weight: 700;
+}
+
 header .header,
 footer .footer {
   visibility: hidden;
@@ -107,7 +111,7 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   scroll-margin: 40px;
 }
@@ -168,12 +172,12 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
-  box-sizing: border-box;
+box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: 0;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -181,8 +185,8 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: #68008c;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -251,7 +255,32 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: #091f2c;
+  color: white;
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.highlight h2 { 
+  background-color: #091f2c;
+  color: #03a64a;
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.highlight.cards-container {
+  background-color: #091f2c;
+  color: white;
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.grey-highlight  {
+  background-color: #f2f2f2;
+  
+}
+
+main .section.center  {
+  text-align: center;
+  
 }
